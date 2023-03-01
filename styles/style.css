@@ -9,6 +9,7 @@
 }
 
 body {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,16 +18,22 @@ body {
 
 .container {
   width: 375px;
-  color: #f2f2f2;
+  color: #ffffffbf;
   margin: 20px 0;
 }
 
-h2 {
+h1 {
   font-family: "Big Shoulders Display", cursive;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
   margin: 30px 0;
+  color: #f2f2f2;
+}
+
+.cars {
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .sedans,
@@ -83,7 +90,14 @@ h2 {
 }
 
 @media (min-width: 768px) {
+  .cars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
   .container {
-    min-width: 768px;
+    width: 900px;
+  }
+  .btn {
+    margin-top: 70px;
   }
 }
