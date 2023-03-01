@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 375px;
+  color: #f2f2f2;
+  margin: 20px 0;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+.sedans,
+.suvs,
+.luxury {
+  padding: 40px;
+  line-height: 30px;
+}
+
+.sedans {
+  background-color: #e38826;
+}
+
+.suvs {
+  background-color: #006970;
+}
+
+.luxury {
+  background-color: #004241;
+}
+
+.btn {
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn:hover {
+  color: #f2f2f2;
+}
+
+.sed-btn {
+  color: #e38826;
+}
+.sed-btn:hover {
+  background-color: #e38826;
+}
+
+.suv-btn {
+  color: #006970;
+}
+.suv-btn:hover {
+  background-color: #006970;
+}
+
+.lux-btn {
+  color: #004241;
+}
+.lux-btn:hover {
+  background-color: #004241;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
